@@ -27,6 +27,9 @@ client.on("message", (message) => {
     if (message.content.match("ซุ่ม")) {
       message.channel.send("┴┬┴┤( ͡° ͜ʖ├┬┴┬");
     } 
+    if (message.content.match("เวล")) {
+      message.channel.send("ตันแล้ว");
+    } 
   }
   if (message.content.indexOf(config.prefix) !== 0) return;
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
