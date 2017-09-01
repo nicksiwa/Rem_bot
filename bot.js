@@ -34,7 +34,7 @@ client.on("message", (message) => {
   if (message.content.indexOf(config.prefix) !== 0) return;
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
-  if (command === "remsay") {
+  if (command === "says") {
     const sayMessage = args.join(" ");
     message.delete().catch(O_o => { });
     message.channel.send(sayMessage);
