@@ -47,12 +47,12 @@ client.on("message", (message) => {
   if (command === "dice") {
 
     function roll() {
-      var i, value, output = '',diceCount = 3;
+      var i, value, output = '', diceCount = 3;
       for (i = 0; i < diceCount; i++) {
         value = Math.floor(Math.random() * 6) + 1;
         output += value + " ";
-    }
-      return output
+      }
+      return output;
     }
     message.channel.send(roll());
   }
