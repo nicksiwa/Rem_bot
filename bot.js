@@ -45,7 +45,6 @@ client.on("message", (message) => {
     message.channel.send(sayMessage);
   }
   if (command === "dice") {
-
     function roll() {
       var i, value, output = '', diceCount = 3;
       for (i = 0; i < diceCount; i++) {
